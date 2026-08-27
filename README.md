@@ -86,6 +86,19 @@ http://localhost:5175
 npm run build
 ```
 
+## GitHub 自动部署
+
+仓库已包含 GitHub Actions 工作流。每次向 `main` 分支推送代码后，Actions 会自动安装依赖、构建项目并部署到当前 Cloudflare Pages 项目。
+
+在 GitHub 仓库的 `Settings > Secrets and variables > Actions` 中添加以下两个 Repository secrets：
+
+```text
+CLOUDFLARE_ACCOUNT_ID=f2ded0908be6a36e06857d42019b8811
+CLOUDFLARE_API_TOKEN=你的 Cloudflare API Token
+```
+
+API Token 至少需要 Cloudflare Pages 的编辑权限。添加完成后，可以在 `Actions` 页面手动运行工作流，或直接推送新的提交触发部署。
+
 ## 目录结构
 
 ```text
