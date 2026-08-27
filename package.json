@@ -1,0 +1,16 @@
+{
+  "name": "simple-lyric",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5175",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  },
+  "dependencies": {
+    "opencc-js": "^1.4.2"
+  }
+}
